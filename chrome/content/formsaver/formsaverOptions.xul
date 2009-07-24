@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://browser/content/places/places.css"?>
+<?xml-stylesheet href="chrome://browser/skin/places/places.css"?>
+
+<!DOCTYPE window SYSTEM "chrome://formsaver/locale/formsaver.dtd">
+
+<window id="formsaver-window" title="&options.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        onload="onLoadFormsaver();">
+
+     <script type="application/x-javascript" src="chrome://global/content/globalOverlay.js"/>
+     <script type="application/x-javascript" src="chrome://browser/content/places/utils.js"/>
+     <script type="application/x-javascript" src="chrome://browser/content/places/treeView.js"/>
+     <script type="application/x-javascript" src="chrome://formsaver/content/formsaverOptions.js"/>
+
+  <groupbox>
+    <vbox flex="1" height="160px">
+
+      <spacer height="5"/>
+        <checkbox id="save-password" label="&savepasswordfields.label;" onclick="passwordWarnings();"/>
+        <checkbox id="save-hidden" label="&savehiddenfields.label;"/>
+        <checkbox id="ignore-blank" label="&ignoreblankfields.label;"/>
+        <checkbox id="ignore-errors" label="&ignoreerrors.label;"/>
+        <checkbox id="check-locations" label="&checklocationhref.label;"/>
+
+      <spacer height="5"/>
+
+        <tree id="bookmarkView" type="places" flex="1" rows="10"
+		  hidecolumnpicker="true" seltype="single"
+	      onselect="onSelectBookmarkFolder(this);">
+          <treecols>
+            <treecol id="title" flex="1" primary="true"/>
+          </treecols>
+          <treechildren flex="1"/>
+        </tree>
+
+      <spacer height="5"/>
+        <row>
+          <label control="bookmarklet-name" value="&bookmarkletnamefield.label;"/>
+          <textbox id="bookmarklet-name" width="200"/>
+        </row>
+
+      <spacer height="5"/>
+        <button id="identifier" class="dialog"
+                label="&createbookmarkletbutton.label;"
+                disabled="false"
+                accesskey="t"
+                oncommand="savePrefs(); opener.createMyBookmarklet(document.getElementById('bookmarklet-name').value); close();"/>
+
+    </vbox>
+  </groupbox>
+
+</window>
+
+

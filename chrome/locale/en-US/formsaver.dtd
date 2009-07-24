@@ -1,0 +1,9 @@
+<!ENTITY options.title "FormSaver">
+
+<!ENTITY createbookmarkletbutton.label "Create Bookmarklet">
+<!ENTITY savepasswordfields.label "Save password fields">
+<!ENTITY ignoreerrors.label "Ignore errors">
+<!ENTITY ignoreblankfields.label "Ignore blank text boxes/areas">
+<!ENTITY savehiddenfields.label "Save hidden fields">
+<!ENTITY bookmarkletnamefield.label "Bookmark Name: ">
+<!ENTITY checklocationhref.label "Check for the original url on form fill?">

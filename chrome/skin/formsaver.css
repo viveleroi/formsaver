@@ -1,0 +1,10 @@
+/*************************************************
+  * FormSaver was designed for Mozilla Firefox
+  *  by Michael Botsko, www.botsko.net
+  *  $Id: formsaver.css,v 1.1 2007-01-08 19:07:57 botskonet Exp $
+  *************************************************/
+
+row>label
+{
+  padding-top:4px;
+}

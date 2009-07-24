@@ -1,0 +1,9 @@
+/*  skin/toolbar-button.css  */
+
+#formsaverext-button {
+  list-style-image: url("chrome://formsaver/skin/formsaver-lg.png");
+}
+
+toolbar[iconsize="small"] #formsaverext-button {
+  list-style-image: url("chrome://formsaver/skin/formsaver-sm.png");
+}

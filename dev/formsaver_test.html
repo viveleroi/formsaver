@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Windows (vers 1 June 2005), see www.w3.org">
+    <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+    <title>
+      FormSaver Testing Form
+    </title>
+<style type="text/css">
+
+    td {
+      font-family: verdana, arial, sans-serif;
+      font-size: 10pt;
+    }
+
+</style>
+  </head>
+  <body>
+    <h1>
+    </h1>
+    <table>
+      <tr>
+        <td width="300">
+          <form name="testform" id="testform">
+            <input type="hidden" name="hidden1" id="hidden1" value="default1" />
+            <input type="password" name="testname"><label>Password
+            field</label><br>
+            <input type="text" name="testemail"><label>Text field</label><br>
+            <br>
+            <input type="checkbox" name="testcheckbox"><label>Checkbox 1, Group
+            1</label><br>
+            <input type="checkbox" name="testcheckbox"><label>Checkbox 2, Group
+            1</label><br>
+            <input type="checkbox" name="testcheckbox"><label>Checkbox 3, Group
+            1</label><br>
+            <input type="checkbox" name="testcheckbox"><label>Checkbox 4, Group
+            1</label><br>
+            <br>
+            <input type="radio" name="testradio2" value="1"><label>Radio 1,
+            Group 1</label><br>
+            <input type="radio" name="testradio2" value="2"><label>Radio 1,
+            Group 1</label><br>
+            <br>
+            <textarea name="testtextarea1">This 'is' "test" textarea\n data\r</textarea><br>
+            <br>
+            <label>Single Select</label><br>
+            <select name="testselect">
+              <option>
+                One
+              </option>
+              <option>
+                Two
+              </option>
+            </select><br>
+            <br>
+            <label>Multiple Select</label><br>
+            <select name="testselect_multiple" size="4" multiple>
+              <option>
+                One
+              </option>
+              <option>
+                Two
+              </option>
+              <option>
+                Three
+              </option>
+              <option>
+                Four
+              </option>
+            </select><br>
+            <br>
+            <input type="reset" name="reset" value="reset">
+          </form>
+        </td>
+        <td width="300">
+          <!-- ######################## HERE IS THE TEST FIELDSET ####################### -->
+          <form name="testform_fieldset" id="testform_fieldset">
+            <fieldset>
+              <legend>FormSaver Test - Fieldset</legend> <input type="password"
+              name="testname_fieldset"><label>Password field</label><br>
+              <input type="text" name="testemail_fieldset"><label>Text
+              field</label><br>
+              <br>
+              <input type="checkbox" name=
+              "testcheckbox_fieldset"><label>Checkbox 1, Group 1</label><br>
+              <input type="checkbox" name=
+              "testcheckbox_fieldset"><label>Checkbox 2, Group 1</label><br>
+              <input type="checkbox" name=
+              "testcheckbox_fieldset"><label>Checkbox 3, Group 1</label><br>
+              <input type="checkbox" name=
+              "testcheckbox_fieldset"><label>Checkbox 4, Group 1</label><br>
+              <br>
+              <input type="radio" name="testradio2_fieldset" value=
+              "1"><label>Radio 1, Group 1</label><br>
+              <input type="radio" name="testradio2_fieldset" value=
+              "2"><label>Radio 1, Group 1</label><br>
+              <br>
+              <textarea name="testtextarea_fieldset"></textarea><br>
+              <br>
+              <label>Single Select</label><br>
+              <select name="testselect_fieldset">
+                <option>
+                  One
+                </option>
+                <option>
+                  Two
+                </option>
+              </select><br>
+              <br>
+              <label>Multiple Select</label><br>
+              <select name="testselect_multiple_fieldset1" size="4" multiple>
+                <option>
+                  One
+                </option>
+                <option>
+                  Two
+                </option>
+                <option>
+                  Three
+                </option>
+                <option>
+                  Four
+                </option>
+              </select><br>
+              <br>
+              <input type="reset" name="reset_fieldset" value="reset">
+            </fieldset>
+          </form>
+        </td>
+      </tr>
+    </table>
+    
+    <iframe src="formsaver_iframe.html" width="600" height="600"></iframe>
+    <iframe src="formsaver_iframe.html" width="600" height="600"></iframe>
+  </body>
+</html>

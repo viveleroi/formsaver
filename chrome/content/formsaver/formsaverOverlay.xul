@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://formsaver/skin/toolbar-button.css" type="text/css"?>
+
+<overlay id="formsaverOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+// This imports our javascript.
+
+<script type="application/x-javascript" src="chrome://formsaver/content/formsaverOverlay.js"></script>
+
+// This is for the toolbar icon
+
+<toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton id="formsaverext-button" class="toolbarbutton-1" label="Form Saver" tooltiptext="Create a FormSaver bookmarklet" oncommand="saveForm();"/>
+</toolbarpalette>
+
+// This is for the right click menu which a vast majority of people will use.
+
+<popup id="contentAreaContextMenu">
+  <menuitem id="formsaver" label="Form Saver" insertafter="context-stop" oncommand="saveForm();"/>
+</popup>
+
+
+// This is for the Tools menu which I'm sure no one will ever use, but I'm nice.
+
+<menupopup id="menu_ToolsPopup">
+	<menuitem insertafter="devToolsSeparator" label="Form Saver" oncommand="saveForm();" />	
+</menupopup>
+
+</overlay>
+

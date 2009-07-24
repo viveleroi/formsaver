@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{4BCC5CF2-DD1B-4f34-80BA-E5A2355D3936}</em:id>
+		<em:name>Form Saver</em:name>
+		<em:version>0.9.1</em:version>
+		<em:description>Saves form field data as autofill-bookmarklets.</em:description>
+		<em:creator>Mike Botsko</em:creator>
+		<em:homepageURL>http://www.botsko.net</em:homepageURL>
+		<em:contributor>Stanley Chow</em:contributor>
+		<em:contributor>Florian Garnier</em:contributor>
+		<em:file>
+			<Description about="urn:mozilla:extension:file:formsaver.jar">
+				<em:package>content/formsaver/</em:package>
+				<em:locale>locale/en-US/</em:locale>
+				<em:skin>skin/</em:skin>
+			</Description>
+		</em:file>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>3.0</em:minVersion>
+				<em:maxVersion>3.5.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+
+</RDF>

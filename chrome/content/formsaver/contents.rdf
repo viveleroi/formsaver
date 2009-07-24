@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+
+	<RDF:Seq RDF:about="urn:mozilla:package:root">
+		<RDF:li RDF:resource="urn:mozilla:package:formsaver"/>
+	</RDF:Seq>
+
+	<RDF:Seq RDF:about="urn:mozilla:overlays">
+		<RDF:li RDF:resource="chrome://browser/content/browser.xul"/>
+		<RDF:li RDF:resource="chrome://navigator/content/navigator.xul"/>
+	</RDF:Seq>
+
+	<RDF:Seq RDF:about="chrome://browser/content/browser.xul">
+		<RDF:li>chrome://formsaver/content/formsaverOverlay.xul</RDF:li>
+	</RDF:Seq>
+
+	<RDF:Seq about="chrome://navigator/content/navigator.xul">
+		<RDF:li>chrome://formsaver/content/formsaverOverlay.xul</RDF:li>
+	</RDF:Seq>
+
+	<RDF:Description RDF:about="urn:mozilla:package:formsaver"
+		chrome:displayName="Form Saver"
+		chrome:author="Mike Botsko"
+		chrome:authorURL="mailto:botsko@gmail.com"
+		chrome:name="formsaver"
+		chrome:extension="true"
+		chrome:description="Saves form field data into auto-fill bookmarklets.">
+	</RDF:Description>
+
+</RDF:RDF>
