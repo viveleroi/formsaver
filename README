@@ -1,0 +1,20 @@
+Formsaver Firefox Extension
+Copyright 2003-2009 (c) Michael Botsko, Botsko.net, LLC
+http://botsko.net/Formsaver
+http://github.com/botskonet/formsaver/tree/master
+
+Support: botsko@gmail.com
+
+
+Formsaver is a firefox extension that attempts to store the exact state of a web form in a firefox
+bookmark. 
+
+
+KNOWN ISSUES
+
+- Sometimes, form fields with invalid name attributes, no id attributes, etc, will not fill in properly.
+- There are some drawbacks to storing the form-fill javascript in the bookmarks:
+
+   - Limited scope. I do not have access to some much-needed API calls within firefox, like detecting page load
+     if you're redirected to the proper URL.
+   - This makes it more difficult to re-load the field values, interact with the page events, etc.
